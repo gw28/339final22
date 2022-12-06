@@ -1,0 +1,50 @@
+/* page 1  */
+.gallery1 {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+/* page 2 */
+.gallery2{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
+}
+
+/* all images */
+img {
+    width: 100%;
+}
+
+/* skip to main content */
+.skip a {
+    position: absolute;
+    top: -40px;
+  }
+
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+  }
+
+
+/* header on all pages */
+header {
+    color: #1F2F16;
+    background-color: #F6DDA2;
+    /* color: #EDACAB;
+    color: #507C50;
+    color: #7A0701; */
+}
+
+.containeri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.about-image, .about-text {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}

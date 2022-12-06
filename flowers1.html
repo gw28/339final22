@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flowers</title>
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+
+        <h1>Grace's Flower Shop</h1>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href="flowers1.html" class="active-page">Collection</a></li>
+                <li><a href="flowers2.html">Seasonal</a></li>
+            </ul>
+        </nav>
+
+        <h2 class="coll-header"> Our Collection of Flowers </h2> 
+
+    </header>
+
+    <!-- gallery of flowers -->
+    <main class = "gallery1" id = "main">
+
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".price25">$25</button>
+            <button type="button" class="control" data-filter=".price40">$40</button>
+            <button type="button" class="control" data-filter=".price55">$55</button>
+            <button type="button" class="control" data-filter="none">None</button>
+        </div>
+
+        
+        <div class="container gallery">
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price25" data-order="25">
+                    <img src="images/alisa-anton-D4Blldtly00-unsplash.jpg" alt="bouquets of pink flowers in buckets" class="coll-image">
+                    <figcaption>pink flowers - $25</figcaption>
+                    <div class="middle">
+                        <div class="price-text"> $25 </div>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price55" data-order="55">
+                    <img src="images/angelina-jollivet-mNEpmNiFdXs-unsplash copy.jpg" alt="peach flowers in glass vase" class="coll-image">
+                    <figcaption>peach flowers - $55</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $55 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price40" data-order="40">
+                    <img src="images/barthelemy-rigaud-3BCyJlPW0hQ-unsplash.jpg" alt="blue flowers surrounded by greenery" class="coll-image">
+                    <figcaption>blue flowers - $40</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $40 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price55" data-order="55">
+                    <img src="images/barthelemy-rigaud-UX2C1D2ZChM-unsplash.jpg" alt="cream flower bouquet in glass vase" class="coll-image">
+                    <figcaption>cream flower bouquet - $55</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $55 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price40" data-order="40">
+                    <img src="images/cindy-chan-1D_QE7gj4-4-unsplash.jpg" alt="small colorful bouquets in brown paper wrap" class="coll-image">
+                    <figcaption>small colorful bouquet - $40</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $40 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price25" data-order="25">
+                    <img src="images/dong-cheng-krEjviclb4E-unsplash.jpg" alt="pink and blue baby's breath in paper wrap" class="coll-image">
+                    <figcaption>colorful baby's breath - $25</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $25 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price40" data-order="40">
+                    <img src="images/girl-with-red-hat-xaJ-fvPZEsM-unsplash.jpg" alt="pink flowers in green glass vase" class="coll-image">
+                    <figcaption>pink flower bouquet - $40</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $40 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price55" data-order="55">
+                    <img src="images/katie-azi-0S2MraPI5A0-unsplash.jpg" alt="close photo of cream and pink bouquet with greenery" class="coll-image">
+                    <figcaption>cream and pink arrangement - $55</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $55 </div>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flower-gallery" tabindex="0">
+                <figure class= "mix price25" data-order="25">
+                    <img src="images/ksenia-mostovaya-BxK2qcVU35E-unsplash.jpg" alt="white flowers on brown cloth" class="coll-image">
+                    <figcaption>white flowers - $25</figcaption>
+                <div class="middle">
+                    <div class="price-text"> $25 </div>
+                </div>
+                </figure>
+            </div>
+    
+        </div>
+        
+    </main>
+
+    <footer>UMSI 339 Final Project by Grace Whaley</footer>
+
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+
+</body>
+</html>
